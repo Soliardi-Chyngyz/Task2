@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="40dp">
+
+    <ImageView
+        android:id="@+id/item_cafe_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/cafe_discount"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/text_shape"
+        android:paddingStart="24dp"
+        android:paddingVertical="8.5dp"
+        android:paddingEnd="12dp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:fontFamily="@font/product_sans_regular"
+        />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/item_cafe_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/product_sans_regular"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_cafe_img" />
+
+    <ImageView
+        android:id="@+id/_cafe_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:src="@drawable/ic_point"
+        app:layout_constraintBottom_toBottomOf="@id/item_cafe_title"
+        app:layout_constraintEnd_toStartOf="@id/cafe_open"
+        app:layout_constraintStart_toEndOf="@id/item_cafe_title"
+        app:layout_constraintTop_toTopOf="@id/item_cafe_title"
+        tools:ignore="ContentDescription" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/cafe_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/product_sans_regular"
+        android:textColor="@color/green"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/_cafe_point"
+        app:layout_constraintStart_toEndOf="@id/_cafe_point"
+        app:layout_constraintTop_toTopOf="@id/_cafe_point" />
+
+    <ImageView
+        android:id="@+id/cafe_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_bx_bxs_star"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_cafe_title"
+        tools:ignore="ContentDescription" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/cafe_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6.5dp"
+        android:fontFamily="@font/product_sans_regular"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/cafe_star"
+        app:layout_constraintStart_toEndOf="@id/cafe_star"
+        app:layout_constraintTop_toTopOf="@id/cafe_star" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/cafe_rating_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6.5dp"
+        android:fontFamily="@font/product_sans_regular"
+        android:textColor="@color/text_gray"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/cafe_rating"
+        app:layout_constraintStart_toEndOf="@id/cafe_rating"
+        app:layout_constraintTop_toTopOf="@id/cafe_rating" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/cafe_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:fontFamily="@font/product_sans_regular"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/cafe_rating_2"
+        app:layout_constraintStart_toEndOf="@id/cafe_rating_2"
+        app:layout_constraintTop_toTopOf="@id/cafe_rating_2" />
+
+    <ImageView
+        android:id="@+id/cafe_little_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/ic_little_point"
+        app:layout_constraintBottom_toBottomOf="@id/cafe_country"
+        app:layout_constraintStart_toEndOf="@id/cafe_country"
+        app:layout_constraintTop_toTopOf="@id/cafe_country"
+        tools:ignore="ContentDescription" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/cafe_burger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:fontFamily="@font/product_sans_regular"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/cafe_country"
+        app:layout_constraintStart_toEndOf="@id/cafe_little_point"
+        app:layout_constraintTop_toTopOf="@id/cafe_country" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/cafe_delivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/product_sans_regular"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cafe_star" />
+
+    <ImageView
+        android:id="@+id/cafe_sec_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:src="@drawable/ic_little_point"
+        app:layout_constraintBottom_toBottomOf="@id/cafe_delivery"
+        app:layout_constraintStart_toEndOf="@id/cafe_delivery"
+        app:layout_constraintTop_toTopOf="@id/cafe_delivery"
+        tools:ignore="ContentDescription" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/cafe_minimum_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:fontFamily="@font/product_sans_regular"
+        android:lastBaselineToBottomHeight="@dimen/cardview_default_radius"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/cafe_sec_point"
+        app:layout_constraintTop_toTopOf="@id/cafe_delivery" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cafe_card_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/item_cafe_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/item_cafe_title">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/cafe_duration_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/yellow"
+            android:padding="9dp"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/cafe_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/product_sans_regular"
+        android:textColor="@color/light_black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cafe_card_time" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+        android:src="@drawable/ic_nav"
+        app:layout_constraintBottom_toBottomOf="@id/cafe_location"
+        app:layout_constraintEnd_toStartOf="@id/cafe_location"
+        app:layout_constraintTop_toTopOf="@id/cafe_location"
+        tools:ignore="ContentDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

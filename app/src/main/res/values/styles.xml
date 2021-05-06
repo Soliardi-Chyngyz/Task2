@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Button_Custom" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:inputType">textCapWords</item>
+        <item name="android:backgroundTint">@color/transparent</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+</resources>

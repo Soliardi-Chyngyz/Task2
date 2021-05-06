@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Task2</string>
+
+    <!--region FragmentLabels-->
+    <string name="fragmentLabel_home">Home</string>
+    <string name="fragmentLabel_search">Search</string>
+    <string name="fragmentLabel_orders">Orders</string>
+    <string name="fragmentLabel_profile">Profile</string>
+    <!--endregion-->
+    
+    <!--Home's fragment elements-->
+    <string name="home_location_title">225 Central Park West, NY 10024, USA</string>
+    <string name="delivery">Delivery</string>
+    <string name="pickup">Pickup</string>
+    <string name="catering">Catering</string>
+    <string name="curbside">Curbside</string>
+    <string name="find_store_by_name">Find store by name</string>
+    <string name="_58">58</string>
+    <string name="stores_open">stores Open</string>
+    <string name="spend_25_save_5">Spend 25$, save 5$</string>
+
+</resources>
